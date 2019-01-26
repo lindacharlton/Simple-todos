@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import { Meteor } from 'meteor/meteor';
+import { Template } from 'meteor/templating';
 
- 
-// Task component - represents a single todo item
-export default class Task extends Component {
-  render() {
-    return (
-      <li>{this.props.task.text}</li>
-    );
-  }
-}
+import './task.html';
 
+Template.task.events({
+    // you'll put your events for checking private/completed and deleting the task here
+});
